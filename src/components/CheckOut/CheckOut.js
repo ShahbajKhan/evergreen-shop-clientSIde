@@ -9,13 +9,13 @@ const CheckOut = () => {
     const [loggedInUser, setLoggedInUser] = useContext(UserContext);
     // console.log(loggedInUser)
     useEffect(() => {
-        fetch(`http://localhost:5000/products/${id}`)
+        fetch(`https://strawberry-pie-51996.herokuapp.com/products/${id}`)
             .then(res => res.json())
             .then(data => setProduct(data))
     }, [])
     const placeOrder = () => {
         const newOrder = { ...loggedInUser, product: product, orderTime: new Date().toDateString('dd/MM/yyyy') };
-        fetch('http://localhost:5000/addOrder',{
+        fetch('https://strawberry-pie-51996.herokuapp.com/addOrder',{
             method:"POST",
             headers:{'Content-type': 'application/json'},
             body: JSON.stringify(newOrder)

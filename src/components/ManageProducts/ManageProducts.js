@@ -7,7 +7,7 @@ const ManageProducts = () => {
     const [spinner, setSpinner] = useState(true);
     // Loading products from server making a get request
     useEffect(() => {
-        fetch('http://localhost:5000/products')
+        fetch('https://strawberry-pie-51996.herokuapp.com/products')
             .then(res => res.json())
             .then(data => {
                 setProducts(data);

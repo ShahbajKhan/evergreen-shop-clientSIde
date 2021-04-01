@@ -7,7 +7,7 @@ const Home = () => {
     const [spinner, setSpinner] = useState(true);
     // Loading Data from server using get request
     useEffect(() => {
-        fetch('http://localhost:5000/products')
+        fetch('https://strawberry-pie-51996.herokuapp.com/products')
             .then(res => res.json())
             .then(data => {
                 setProducts(data);

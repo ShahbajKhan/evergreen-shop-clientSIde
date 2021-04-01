@@ -14,7 +14,7 @@ const AddProduct = () => {
             weight: data.weight,
             imageURL: imageURL
         };
-        const url = `http://localhost:5000/addProduct`;
+        const url = `https://strawberry-pie-51996.herokuapp.com/addProduct`;
 
         fetch(url, {
             method: 'POST',

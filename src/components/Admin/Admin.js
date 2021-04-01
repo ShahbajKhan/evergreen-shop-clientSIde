@@ -10,7 +10,7 @@ const Admin = () => {
         <div className="container" >
             <div className="row">
                 {/* Display Buttons */}
-                <div className="col-lg-3 p-0" >
+                <div className="col-lg-3 col-md-12 p-0" >
                     <div className="d-flex flex-column align-items-center">
                         <button className="btn btn-dark w-100 py-5" onClick={()=>setShowForm(true)}><FontAwesomeIcon icon={faPlus}/> Add Product</button>
                         <button className="btn btn-dark w-100 py-5" onClick={()=>setShowForm(false)}><FontAwesomeIcon icon={faBars}/> Manage Product</button>
@@ -18,7 +18,7 @@ const Admin = () => {
                     </div>
                 </div>
                 {/* Display add product form or manage product */}
-                <div className="col-lg-9">
+                <div className="col-lg-9 col-md-12">
                     {
                         showForm? <AddProduct></AddProduct>: <ManageProducts></ManageProducts>
                     }

@@ -7,7 +7,7 @@ const Orders = () => {
     const [loggedInUser, setLoggedInUser] = useContext(UserContext);
     // Retrieve orders using mail address
     useEffect(() => {
-        fetch('http://localhost:5000/orders?email=' + loggedInUser.email, {
+        fetch('https://strawberry-pie-51996.herokuapp.com/orders?email=' + loggedInUser.email, {
             method: "GET",
             headers: {
                 'Content-type': 'application/json',
