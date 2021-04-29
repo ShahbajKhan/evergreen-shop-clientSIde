@@ -2,11 +2,11 @@
 ## Node-mongo-react
 ### CRUD System
 
-[Github repo for client](https://github.com/ShahbajKhan/evergreen-shop-clientSIde).
-[Github repo for Server](https://github.com/ShahbajKhan/evergreen-shop-serverSide).
+1) [Github repo for client](https://github.com/ShahbajKhan/evergreen-shop-clientSIde).
+2) [Github repo for Server](https://github.com/ShahbajKhan/evergreen-shop-serverSide).
 
-[Live link-firebase](https://evergreen-shop.web.app/)
-[Backend Server](https://strawberry-pie-51996.herokuapp.com/)
+3) [Live link-firebase](https://evergreen-shop.web.app/)
+4) [Backend Server](https://strawberry-pie-51996.herokuapp.com/)
 
 ## Available Features
 1) User can login with google facebook since the app has firebase authentication. 
